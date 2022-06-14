@@ -1,6 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*my code begins here*/
 :root{
     --side-bar-color : #2596be;
     --header-color : #ffffff;
     --yellow : #f0b429;
     --grey : #e2e8f0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr 4fr 6fr;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: var(--side-bar-color);
+    color: var(--header-color);
+}
+.sidebar-top{
+    grid-row: 1/2;
+}
+.sidebar-mid{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebar-bottom{
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header{
+    grid-column: 2/span1;
+    grid-row: 1/span1;
+}
+.center{
+    grid-column: 2/span1;
+    grid-row: 2/span1;
+}
+.bottom-pfp{
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 80px;
+}
+.trend-user-pfp, .top-pfp{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 80px;
 }

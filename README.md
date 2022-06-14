@@ -8,6 +8,6 @@ Profile Picture of Tegan : Foxlariat (https://www.pinterest.com/pin/alice-ackerm
 
 Profile Picture of Kendall : Boba Cat from TeeTurtle by Day of the Shirt (https://www.pinterest.com/pin/351491945920716128/)
 
-Profile Picture of Alex : ToastyMochi (https://tenor.com/view/cute-animal-little-anime-gif-5948543)
+Profile Picture of Alex : Eve Wang (https://www.kindpng.com/imgv/TJbiRw_freetoedit-cute-mouse-kawaii-chibi-cute-animal-drawings/)
 
 Icons : Material Design Icons (https://materialdesignicons.com/)
