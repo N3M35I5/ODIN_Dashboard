@@ -59,7 +59,7 @@ table {
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 9fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -153,7 +153,9 @@ table {
     grid-column: 3/4;
     display: flex;
     gap: 20px;
+    justify-content: flex-end;
 }
+
 .header-btn{
     width: 80px;
     height: 30px;
@@ -166,7 +168,52 @@ table {
 .center{
     grid-column: 2/span1;
     grid-row: 2/span1;
+    background-color: var(--grey);
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-rows: repeat(2,1fr);
+    padding: 20px 20px 40px 20px;
+    gap: 20px;
 }
+.announcements, .trending{
+    background-color: var(--header-color);
+}
+.projects{
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 40px auto;
+}
+.project-header{
+    font-weight: bold;
+    font-size: medium;
+}
+.topic-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.topics{
+    width: 250px;
+    height: 200px;
+    background-color: var(--header-color);
+    border-left: 5px solid var(--yellow);
+    border-radius:15px ;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.topic-heading{
+    font-weight: bold;
+    font-size: medium;
+    
+}
+.topic-content{
+    font-size: 12px;
+    padding-right: 40px;
+    text-align: justify;
+    
+}
+
+
 .bottom-pfp{
     max-width: 70px;
     max-height: 70px;
